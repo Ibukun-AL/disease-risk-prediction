@@ -1,0 +1,10 @@
+services:
+  model:
+    build: ./model
+    ports: ["8000:8000"]
+  gateway:
+    build: ./gateway
+    environment:
+      MODEL_URL: http://model:8000
+    ports: ["8080:8080"]
+    depends_on: [model]
