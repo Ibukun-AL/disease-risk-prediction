@@ -20,5 +20,12 @@ def test_predict_rejects_wrong_length():
     assert r.status_code == 422
 
 
+def test_home_page_shows_live_example_score():
+    r = client.get("/")
+    assert r.status_code == 200
+    assert "Risk model service" in r.text
+    assert "__RISK__" not in r.text and "__PCT__" not in r.text
+
+
 def test_health():
     assert client.get("/health").json() == {"status": "ok"}
