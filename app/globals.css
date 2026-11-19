@@ -1,0 +1,4 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #0f1b22; color: #e6eef0; }
+body { font-family: var(--font-sans), system-ui, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: #7fb7c2; }

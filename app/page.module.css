@@ -1,0 +1,24 @@
+.main { max-width: 60rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; display: grid; gap: 1.25rem; }
+.k { color: #7fb7c2; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700; }
+.h1 { font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.1; letter-spacing: -0.02em; }
+.lede { color: #b4c7cc; max-width: 42rem; }
+.form { display: grid; gap: 1.25rem; }
+.row { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; }
+.ghost { font: inherit; font-size: 0.875rem; font-weight: 600; padding: 0.5rem 0.95rem; border: 1px solid #2d4852; border-radius: 99px; background: #16272f; color: #cfe3e7; cursor: pointer; }
+.ghost:hover { border-color: #7fb7c2; }
+.cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.group { border: 1px solid #2d4852; border-radius: 10px; background: #16272f; padding: 0.4rem 1rem 1rem; display: grid; gap: 0.5rem; }
+.group legend { padding: 0 0.4rem; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #7fb7c2; font-weight: 700; }
+.field { display: grid; grid-template-columns: 1fr 5.5rem; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: #b4c7cc; }
+.field input { font: inherit; padding: 0.35rem 0.5rem; border: 1px solid #2d4852; border-radius: 6px; background: #0f1b22; color: #e6eef0; width: 100%; }
+.field input:focus-visible { outline: 2px solid #7fb7c2; outline-offset: 1px; }
+.go { font: inherit; font-weight: 700; padding: 0.7rem 1.6rem; border: 0; border-radius: 8px; background: #7be0a9; color: #0f1b22; cursor: pointer; }
+.go:disabled { opacity: 0.6; cursor: default; }
+.error { color: #ff9b9b; font-weight: 600; }
+.result { background: #16272f; border: 1px solid #2d4852; border-radius: 10px; padding: 1.1rem 1.25rem; max-width: 26rem; }
+.big { font-size: 3rem; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+.meter { height: 8px; border-radius: 4px; background: #0f1b22; margin-top: 0.8rem; overflow: hidden; }
+.meter span { display: block; height: 100%; background: #7be0a9; }
+.note { font-size: 0.85rem; color: #8fa6ab; max-width: 42rem; }
+.note code { font-size: 0.8rem; color: #cfe3e7; }
+@media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
